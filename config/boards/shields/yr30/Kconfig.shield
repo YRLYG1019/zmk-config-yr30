@@ -1,0 +1,5 @@
+config SHIELD_YR30_LEFT
+    def_bool $(shields_list_contains,yr30_left)
+
+config SHIELD_YR30_RIGHT
+    def_bool $(shields_list_contains,yr30_right)

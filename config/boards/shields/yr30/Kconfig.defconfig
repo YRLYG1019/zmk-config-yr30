@@ -1,0 +1,22 @@
+# Copyright (c) 2021 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+
+if SHIELD_YR30_LEFT
+# 右親機にしたければ "if SHIELD_YR30_RIGHT" にする
+
+config ZMK_KEYBOARD_NAME
+    default "yr30 Keyboard"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+
+if SHIELD_YR30_LEFT || SHIELD_YR30_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
