@@ -17,12 +17,5 @@
 #     artifact-name: corne_left_with_logging
 #
 ---
-include:
-  - board: seeeduino_xiao_ble
-    shield: yr30_left
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: seeeduino_xiao_ble
-    shield: yr30_right
-  - board: seeeduino_xiao_ble
-    shield: settings_reset
+board: ["seeeduino_xiao_ble"]
+shield: ["yr30_left","yr30_right","settings_reset"]
