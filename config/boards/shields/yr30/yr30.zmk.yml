@@ -1,0 +1,8 @@
+file_format: "1"
+id: yr30
+name: yr30
+type: shield
+url: https://github.com/YRLYG1019/zmk-config-yr30
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
