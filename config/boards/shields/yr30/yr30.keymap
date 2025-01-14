@@ -1,7 +1,6 @@
+// デフォルトキーマップは大西配列を使わせて貰ってる。
 
-// デフォルトキーマップ（大西配列）
-
-// 定義を呼んでくる
+// 定義を呼ぶ。
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
@@ -10,7 +9,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 
-// 特殊入力の挙動を調整できる
+// 特殊入力の挙動を調整する。
 
 &mt {
     flavor = "tap-preferred";
@@ -51,11 +50,11 @@
     };
 
 
-    // 複数キーの同時押しに特別の入力を設定できる
+    // 複数キーの同時押し(Combo)の設定。
     // キー番号早見表：
-    // 0  1  2  3  4  5  6  7  8  9
-    //10 11 12 13 14 15 16 17 18 19
-    //20 21 22 23 24 25 26 27 28 29
+    //  0  1  2  3  4  5  6  7  8  9
+    // 10 11 12 13 14 15 16 17 18 19
+    // 20 21 22 23 24 25 26 27 28 29
 
     combos {
         compatible = "zmk,combos";
@@ -72,51 +71,51 @@
             bindings = <&kp BACKSPACE>;
         };
 
-        combo_ space{
+        combo_ space {
             key-positions = <11 12>;
             bindings = <&kp SPACE>;
         };
 
-        combo_ tab{
+        combo_ tab {
             key-positions = <12 13>;
             bindings = <&kp TAB>;
         };
 
-        combo_ shiftspace{
+        combo_ shiftspace {
             key-positions = <1 2>;
             bindings = <&kp LS(SPACE)>;
         };
 
-        combo_ esc{
+        combo_ esc {
             key-positions = <8 9>;
             bindings = <&kp ESC>;
         };
 
-        combo_ home{
+        combo_ home {
             key-positions = <15 16>;
             bindings = <&kp HOME>;
         };
 
-        combo_ end{
+        combo_ end {
             key-positions = <25 26>;
             bindings = <&kp END>;
         };
-        combo_ pageup{
+        combo_ pageup {
             key-positions = <26 27>;
             bindings = <&kp PG_UP>;
         };
 
-        combo_ pagedown{
+        combo_ pagedown {
             key-positions = <27 28>;
             bindings = <&kp PG_DN>;
         };
 
-        combo_ insert{
+        combo_ insert {
             key-positions = <6 7>;
             bindings = <&kp INS>;
         };
 
-        combo_ capslock{
+        combo_ capslock {
             key-positions = <0 1>;
             bindings = <&kp CAPSLOCK>;
         };
@@ -184,7 +183,7 @@
             &kp LCTRL    &mkp MB3     &mkp MB2     &mkp MB1      &none          &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &kp RCTRL
             &kp LSHFT    &mkp MB4     &mkp MB5     &none         &trans         &none          &none          &none        &none           &kp RSHFT
             >;
-        };
+        }
 
         layer_system {
             bindings = <
