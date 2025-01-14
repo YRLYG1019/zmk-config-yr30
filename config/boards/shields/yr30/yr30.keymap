@@ -71,51 +71,52 @@
             bindings = <&kp BACKSPACE>;
         };
 
-        combo_ space {
+        combo_space {
             key-positions = <11 12>;
             bindings = <&kp SPACE>;
         };
 
-        combo_ tab {
+        combo_tab {
             key-positions = <12 13>;
             bindings = <&kp TAB>;
         };
 
-        combo_ shiftspace {
+        combo_shiftspace {
             key-positions = <1 2>;
             bindings = <&kp LS(SPACE)>;
         };
 
-        combo_ esc {
+        combo_esc {
             key-positions = <8 9>;
             bindings = <&kp ESC>;
         };
 
-        combo_ home {
+        combo_home {
             key-positions = <15 16>;
             bindings = <&kp HOME>;
         };
 
-        combo_ end {
+        combo_end {
             key-positions = <25 26>;
             bindings = <&kp END>;
         };
-        combo_ pageup {
+
+        combo_pageup {
             key-positions = <26 27>;
             bindings = <&kp PG_UP>;
         };
 
-        combo_ pagedown {
+        combo_pagedown {
             key-positions = <27 28>;
             bindings = <&kp PG_DN>;
         };
 
-        combo_ insert {
+        combo_insert {
             key-positions = <6 7>;
             bindings = <&kp INS>;
         };
 
-        combo_ capslock {
+        combo_capslock {
             key-positions = <0 1>;
             bindings = <&kp CAPSLOCK>;
         };
