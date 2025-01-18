@@ -58,8 +58,6 @@
 
     combos {
         compatible = "zmk,combos";
-        timeout-ms = <100>;
-        require-prior-idle-ms = <150>;
 
         combo_enter {
             key-positions = <17 18>;
